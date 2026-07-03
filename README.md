@@ -1,4 +1,4 @@
-\# Proyek Akhir Pemrograman Berbasis Objek 1
+# Proyek Akhir Pemrograman Berbasis Objek 1
 
 
 
@@ -6,35 +6,35 @@ Proyek ini merupakan aplikasi Sistem Distribusi LPG 3Kg Bersubsidi yang dibuat m
 
 
 
-\## Latar Belakang
+## Latar Belakang
 
 
 
-Program ini dibuat berdasarkan hasil observasi dan pengumpulan data secara langsung di \*\*Pangkalan LPG 3 Kg M ARBANI\*\*. Dari hasil observasi diketahui bahwa proses distribusi LPG 3 Kg bersubsidi telah memanfaatkan sistem \*\*Merchant Apps Pertamina (MAP)\*\* untuk melakukan verifikasi pembeli, pencatatan transaksi, dan pembayaran.
+Program ini dibuat berdasarkan hasil observasi dan pengumpulan data secara langsung di **Pangkalan LPG 3 Kg M ARBANI**. Dari hasil observasi diketahui bahwa proses distribusi LPG 3 Kg bersubsidi telah memanfaatkan sistem **Merchant Apps Pertamina (MAP)** untuk melakukan verifikasi pembeli, pencatatan transaksi, dan pembayaran.
 
 
 
-Berdasarkan proses tersebut, penulis mengembangkan aplikasi berbasis Java sebagai bentuk implementasi konsep \*\*Pemrograman Berbasis Objek (OOP)\*\*. Aplikasi ini dirancang untuk mensimulasikan proses distribusi LPG 3 Kg bersubsidi, mulai dari pendataan pembeli, validasi kelayakan subsidi, pencatatan transaksi, perhitungan total pembayaran, hingga pembuatan laporan transaksi.
+Berdasarkan proses tersebut, penulis mengembangkan aplikasi berbasis Java sebagai bentuk implementasi konsep **Pemrograman Berbasis Objek (OOP)**. Aplikasi ini dirancang untuk mensimulasikan proses distribusi LPG 3 Kg bersubsidi, mulai dari pendataan pembeli, validasi kelayakan subsidi, pencatatan transaksi, perhitungan total pembayaran, hingga pembuatan laporan transaksi.
 
 
 
-\## Deskripsi
+## Deskripsi
 
 
 
-Aplikasi ini merupakan simulasi sistem distribusi LPG 3 Kg bersubsidi yang dikembangkan berdasarkan hasil observasi di \*\*Pangkalan LPG 3 Kg M ARBANI\*\*. Program menerima data pembeli berupa \*\*NIK\*\*, \*\*Nama Pembeli\*\*, \*\*Status Kelayakan Subsidi\*\*, serta \*\*Jumlah Tabung\*\* yang dibeli.
+Aplikasi ini merupakan simulasi sistem distribusi LPG 3 Kg bersubsidi yang dikembangkan berdasarkan hasil observasi di **Pangkalan LPG 3 Kg M ARBANI**. Program menerima data pembeli berupa **NIK**, **Nama Pembeli**, **Status Kelayakan Subsidi**, serta **Jumlah Tabung** yang dibeli.
 
 
 
-Sistem melakukan validasi kelayakan penerima subsidi, membatasi pembelian maksimal \*\*2 tabung per NIK\*\*, menghitung total pembayaran berdasarkan harga LPG bersubsidi, menyimpan riwayat transaksi, menampilkan statistik penjualan, serta mencetak laporan transaksi ke dalam file \*\*Laporan\_Distribusi\_LPG.txt\*\*.
+Sistem melakukan validasi kelayakan penerima subsidi, membatasi pembelian maksimal **2 tabung per NIK**, menghitung total pembayaran berdasarkan harga LPG bersubsidi, menyimpan riwayat transaksi, menampilkan statistik penjualan, serta mencetak laporan transaksi ke dalam file **Laporan_Distribusi_LPG.txt**.
 
 
 
-Program ini dikembangkan menggunakan bahasa pemrograman Java dengan menerapkan konsep \*\*Object Oriented Programming (OOP)\*\* seperti \*\*Class, Object, Attribute, Constructor, Mutator, Accessor, Encapsulation, Inheritance, Polymorphism, Seleksi, Perulangan, Input Output Sederhana, Array (ArrayList), Error Handling, Abstract Class\*\*, dan \*\*Interface\*\*.
+Program ini dikembangkan menggunakan bahasa pemrograman Java dengan menerapkan konsep **Object Oriented Programming (OOP)** seperti **Class, Object, Attribute, Constructor, Mutator, Accessor, Encapsulation, Inheritance, Polymorphism, Seleksi, Perulangan, Input Output Sederhana, Array (ArrayList), Error Handling, Abstract Class**, dan **Interface**.
 
 
 
-\## Penjelasan Kode
+## Penjelasan Kode
 
 
 
@@ -42,7 +42,7 @@ Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
 
 
 
-1\. \*\*Class\*\* adalah template atau blueprint dari object. Pada program ini terdapat beberapa class yaitu `GasLPG`, `GasLPG3KgSubsidi`, `Pembeli`, `Transaksi`, dan `AplikasiLPG3Kg`.
+1. **Class** adalah template atau blueprint dari object. Pada program ini terdapat beberapa class yaitu `GasLPG`, `GasLPG3KgSubsidi`, `Pembeli`, `Transaksi`, dan `AplikasiLPG3Kg`.
 
 
 
@@ -50,11 +50,11 @@ Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
 
 public class Pembeli {
 
-&#x20;   private String nik;
+   private String nik;
 
-&#x20;   private String nama;
+   private String nama;
 
-&#x20;   private boolean layakSubsidi;
+   private boolean layakSubsidi;
 
 }
 
@@ -62,11 +62,11 @@ public class Pembeli {
 
 public class Transaksi {
 
-&#x20;   private Pembeli pembeli;
+   private Pembeli pembeli;
 
-&#x20;   private GasLPG3KgSubsidi gas;
+   private GasLPG3KgSubsidi gas;
 
-&#x20;   private int jumlah;
+   private int jumlah;
 
 }
 
@@ -74,9 +74,9 @@ public class Transaksi {
 
 public class GasLPG3KgSubsidi extends GasLPG {
 
-&#x20;   private double harga;
+   private double harga;
 
-&#x20;   private double subsidi;
+   private double subsidi;
 
 }
 
@@ -84,7 +84,7 @@ public class GasLPG3KgSubsidi extends GasLPG {
 
 
 
-2\. \*\*Object\*\* adalah instance dari class. Pada kode ini, object dibuat menggunakan kata kunci `new` saat data transaksi ditambahkan ke dalam sistem.
+2. **Object** adalah instance dari class. Pada kode ini, object dibuat menggunakan kata kunci `new` saat data transaksi ditambahkan ke dalam sistem.
 
 
 
@@ -100,7 +100,7 @@ Transaksi t = new Transaksi(pembeli, gasLpg, jumlah);
 
 
 
-3\. \*\*Attribute\*\* adalah variabel yang dimiliki oleh class untuk menyimpan data atau keadaan dari object.
+3. **Attribute** adalah variabel yang dimiliki oleh class untuk menyimpan data atau keadaan dari object.
 
 
 
@@ -116,7 +116,7 @@ private boolean layakSubsidi;
 
 
 
-4\. \*\*Constructor\*\* adalah method khusus yang pertama kali dijalankan pada saat pembuatan object untuk menginisialisasi nilai awal atribut.
+4. **Constructor** adalah method khusus yang pertama kali dijalankan pada saat pembuatan object untuk menginisialisasi nilai awal atribut.
 
 
 
@@ -124,11 +124,11 @@ private boolean layakSubsidi;
 
 public Pembeli(String nik, String nama, boolean layakSubsidi){
 
-&#x20;   this.nik = nik;
+   this.nik = nik;
 
-&#x20;   this.nama = nama;
+   this.nama = nama;
 
-&#x20;   this.layakSubsidi = layakSubsidi;
+   this.layakSubsidi = layakSubsidi;
 
 }
 
@@ -136,7 +136,7 @@ public Pembeli(String nik, String nama, boolean layakSubsidi){
 
 
 
-5\. \*\*Mutator (Setter)\*\* digunakan untuk mengubah atau mengatur nilai suatu atribut yang dienkapsulasi.
+5. **Mutator (Setter)** digunakan untuk mengubah atau mengatur nilai suatu atribut yang dienkapsulasi.
 
 
 
@@ -144,7 +144,7 @@ public Pembeli(String nik, String nama, boolean layakSubsidi){
 
 public void setIdTabung(String idTabung){
 
-&#x20;   this.idTabung = idTabung;
+   this.idTabung = idTabung;
 
 }
 
@@ -152,7 +152,7 @@ public void setIdTabung(String idTabung){
 
 
 
-6\. \*\*Accessor (Getter)\*\* digunakan untuk mengambil atau membaca nilai dari suatu atribut.
+6. **Accessor (Getter)** digunakan untuk mengambil atau membaca nilai dari suatu atribut.
 
 
 
@@ -160,7 +160,7 @@ public void setIdTabung(String idTabung){
 
 public String getNama(){
 
-&#x20;   return nama;
+   return nama;
 
 }
 
@@ -168,7 +168,7 @@ public String getNama(){
 
 public String getNik(){
 
-&#x20;   return nik;
+   return nik;
 
 }
 
@@ -176,7 +176,7 @@ public String getNik(){
 
 
 
-7\. \*\*Encapsulation\*\* adalah konsep menyembunyikan data dengan membuat atribut bersifat private sehingga hanya dapat diakses melalui getter maupun setter.
+7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut bersifat private sehingga hanya dapat diakses melalui getter maupun setter.
 
 
 
@@ -190,7 +190,7 @@ private double berat;
 
 
 
-8\. \*\*Inheritance\*\* adalah konsep pewarisan di mana sebuah class dapat mewarisi properti dan method dari class induknya. Pada program ini class `GasLPG3KgSubsidi` mewarisi class `GasLPG`.
+8. **Inheritance** adalah konsep pewarisan di mana sebuah class dapat mewarisi properti dan method dari class induknya. Pada program ini class `GasLPG3KgSubsidi` mewarisi class `GasLPG`.
 
 
 
@@ -198,7 +198,7 @@ private double berat;
 
 public class GasLPG3KgSubsidi extends GasLPG {
 
-&#x20;   // Mewarisi properti idTabung dan berat dari superclass
+   // Mewarisi properti idTabung dan berat dari superclass
 
 }
 
@@ -206,7 +206,7 @@ public class GasLPG3KgSubsidi extends GasLPG {
 
 
 
-9\. \*\*Polymorphism\*\* pada program ini menggunakan konsep Method Overriding, yaitu mengimplementasikan ulang secara spesifik method yang diturunkan dari abstract class induk.
+9. **Polymorphism** pada program ini menggunakan konsep Method Overriding, yaitu mengimplementasikan ulang secara spesifik method yang diturunkan dari abstract class induk.
 
 
 
@@ -216,11 +216,11 @@ public class GasLPG3KgSubsidi extends GasLPG {
 
 public void tampilkanDetail(){
 
-&#x20;   System.out.println("Jenis Gas      : LPG 3 KG (Subsidi)");
+   System.out.println("Jenis Gas      : LPG 3 KG (Subsidi)");
 
-&#x20;   System.out.println("ID Tabung      : " + getIdTabung());
+   System.out.println("ID Tabung      : " + getIdTabung());
 
-&#x20;   System.out.println("Berat Bersih   : " + getBerat() + " Kg");
+   System.out.println("Berat Bersih   : " + getBerat() + " Kg");
 
 }
 
@@ -228,7 +228,7 @@ public void tampilkanDetail(){
 
 
 
-10\. \*\*Seleksi\*\* adalah statement kontrol keputusan untuk menentukan kelayakan subsidi pembeli serta membatasi kuota maksimal pembelian tabung.
+10. **Seleksi** adalah statement kontrol keputusan untuk menentukan kelayakan subsidi pembeli serta membatasi kuota maksimal pembelian tabung.
 
 
 
@@ -236,9 +236,9 @@ public void tampilkanDetail(){
 
 if(!layakSubsidi){
 
-&#x20;   System.out.println("Transaksi ditolak");
+   System.out.println("Transaksi ditolak");
 
-&#x20;   return;
+   return;
 
 }
 
@@ -246,7 +246,7 @@ if(!layakSubsidi){
 
 if(jumlah > 2){
 
-&#x20;   System.out.println("Pembelian maksimal 2 tabung");
+   System.out.println("Pembelian maksimal 2 tabung");
 
 }
 
@@ -254,7 +254,7 @@ if(jumlah > 2){
 
 
 
-11\. \*\*Perulangan\*\* adalah statement kontrol untuk menjalankan blok kode berulang kali, digunakan pada menu utama aplikasi dan saat menampilkan seluruh riwayat transaksi.
+11. **Perulangan** adalah statement kontrol untuk menjalankan blok kode berulang kali, digunakan pada menu utama aplikasi dan saat menampilkan seluruh riwayat transaksi.
 
 
 
@@ -262,7 +262,7 @@ if(jumlah > 2){
 
 do {
 
-&#x20;   // Menampilkan menu utama aplikasi
+   // Menampilkan menu utama aplikasi
 
 } while(pilihan != 4);
 
@@ -274,7 +274,7 @@ do {
 
 for(int i = 0; i < daftarTransaksi.size(); i++){
 
-&#x20;   daftarTransaksi.get(i).cetakTransaksi();
+   daftarTransaksi.get(i).cetakTransaksi();
 
 }
 
@@ -282,7 +282,7 @@ for(int i = 0; i < daftarTransaksi.size(); i++){
 
 
 
-12\. \*\*Input Output Sederhana\*\* digunakan untuk berinteraksi dengan pengguna melalui class `Scanner` dan mencetak berkas fisik laporan teks menggunakan `FileWriter`.
+12. **Input Output Sederhana** digunakan untuk berinteraksi dengan pengguna melalui class `Scanner` dan mencetak berkas fisik laporan teks menggunakan `FileWriter`.
 
 
 
@@ -298,7 +298,7 @@ FileWriter writer = new FileWriter("Laporan\_Distribusi\_LPG.txt");
 
 
 
-13\. \*\*Array\*\* pada program ini menggunakan objek dinamis `ArrayList` untuk menyimpan dan menampung seluruh kumpulan data transaksi terstruktur.
+13. **Array** pada program ini menggunakan objek dinamis `ArrayList` untuk menyimpan dan menampung seluruh kumpulan data transaksi terstruktur.
 
 
 
@@ -310,7 +310,7 @@ private static ArrayList<Transaksi> daftarTransaksi = new ArrayList<>();
 
 
 
-14\. \*\*Error Handling\*\* digunakan untuk menangani kesalahan atau eksepsi tipe input data pengguna menggunakan blok `try-catch`.
+14. **Error Handling** digunakan untuk menangani kesalahan atau eksepsi tipe input data pengguna menggunakan blok `try-catch`.
 
 
 
@@ -318,11 +318,11 @@ private static ArrayList<Transaksi> daftarTransaksi = new ArrayList<>();
 
 try{
 
-&#x20;   pilihan = scanner.nextInt();
+   pilihan = scanner.nextInt();
 
 }catch(InputMismatchException e){
 
-&#x20;   System.out.println("Input harus berupa angka!");
+   System.out.println("Input harus berupa angka!");
 
 }
 
@@ -330,7 +330,7 @@ try{
 
 
 
-15\. \*\*Abstract Class\*\* digunakan sebagai class induk abstrak yang mendefinisikan kerangka dasar data tabung LPG namun tidak dapat diinstansiasi langsung menjadi object.
+15. **Abstract Class** digunakan sebagai class induk abstrak yang mendefinisikan kerangka dasar data tabung LPG namun tidak dapat diinstansiasi langsung menjadi object.
 
 
 
@@ -338,7 +338,7 @@ try{
 
 public abstract class GasLPG {
 
-&#x20;   public abstract void tampilkanDetail();
+   public abstract void tampilkanDetail();
 
 }
 
@@ -346,7 +346,7 @@ public abstract class GasLPG {
 
 
 
-16\. \*\*Interface\*\* digunakan sebagai kontrak cetak laporan untuk mendefinisikan method abstrak tanpa tubuh yang wajib diimplementasikan oleh class utama aplikasi.
+16. **Interface** digunakan sebagai kontrak cetak laporan untuk mendefinisikan method abstrak tanpa tubuh yang wajib diimplementasikan oleh class utama aplikasi.
 
 
 
@@ -354,7 +354,7 @@ public abstract class GasLPG {
 
 public interface Laporan {
 
-&#x20;   void hitungTotalPenjualan();
+   void hitungTotalPenjualan();
 
 }
 
@@ -368,13 +368,13 @@ public class AplikasiLPG3Kg implements Laporan {
 
 
 
-&#x20;   @Override
+   @Override
 
-&#x20;   public void hitungTotalPenjualan() {
+   public void hitungTotalPenjualan() {
 
 
 
-&#x20;   }
+   }
 
 
 
@@ -384,7 +384,7 @@ public class AplikasiLPG3Kg implements Laporan {
 
 
 
-\## Usulan nilai
+## Usulan nilai
 
 
 
@@ -420,11 +420,11 @@ public class AplikasiLPG3Kg implements Laporan {
 
 | 14  | Error Handling |   15    |
 
-|     | \*\*TOTAL\*\*      | \*\*100\*\* |
+|     | **TOTAL**      | **100** |
 
 
 
-\## Pembuat
+## Pembuat
 
 
 
